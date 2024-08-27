@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: user-service
+  data:
+    mongodb:
+      host: localhost
+      username: admin
+      password: admin@1234
+      uri: mongodb://admin:admin%4012345@localhost:27017/user_db?authSource=admin
+      database: user_db
+      port: 27017
