@@ -13,7 +13,7 @@ public class ClientConfig {
     @Bean
     UserClientService userClientService() {
         WebClient client = WebClient.builder()
-                .baseUrl("http://localhost:8081/api/users")
+                .baseUrl("http://localhost:8081/api/v1/users")
                 .build();
 
         WebClientAdapter adapter = WebClientAdapter.create(client);
